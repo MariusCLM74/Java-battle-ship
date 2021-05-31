@@ -1,111 +1,201 @@
-<mxfile host="app.diagrams.net" modified="2021-05-30T13:44:42.920Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="eHfB6VrYnvdehewQpwhI" version="14.6.13" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-31T17:43:14.960Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="-NS0rrc-KgYxvGJ2F5PR" version="14.6.13" type="github">
   <diagram id="Xrt__qwN0PWU03THwhLJ" name="Page-1">
-    <mxGraphModel dx="2031" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="920" dy="474" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="vrBCTd_uDz507Jjtsnyi-3" value="&lt;b&gt;Game&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="40" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-4" value="- scanner : Scanner&lt;br&gt;- player1 : Player&lt;br&gt;- player2 : Player&lt;br&gt;- firstPlayer : int&lt;br&gt;- opponentType : String" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="80" y="80" width="240" height="90" as="geometry" />
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-4" target="vrBCTd_uDz507Jjtsnyi-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="120" />
+              <mxPoint x="470" y="120" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-5" value="+ init() : void&lt;br&gt;+ play() : void&lt;br&gt;- setupBoards(player : Player) : void&lt;br&gt;+ getFirstPlayer() : Player&lt;br&gt;- setFirstPlayer() : void&lt;br&gt;- askForOpponentType() : void&lt;br&gt;- askToPlay() : void&lt;br&gt;- askForComputerDifficulty() : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="80" y="170" width="240" height="130" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-4" value="- player1 : Player&lt;br&gt;- player2 : Player&lt;br&gt;- playerPlay : int&lt;br&gt;- playerWinner : String&lt;br&gt;- in : BufferedReader" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-5" value="+ init() : void&lt;br&gt;+ play() : void&lt;br&gt;+ end() : void&lt;br&gt;- setOpponentType() : String&lt;br&gt;- setFirstPlayer() : void&lt;br&gt;- printGameLauncher() : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="80" y="160" width="240" height="90" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-6" value="&lt;b&gt;&lt;i&gt;Player&lt;/i&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="40" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-9" value="# scanner : Scanner&lt;br&gt;# playerName : String&lt;br&gt;# position : int&lt;br&gt;# attackBoard : Board&lt;br&gt;# personnalBoard : Board" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="520" y="80" width="240" height="90" as="geometry" />
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.044;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-9" target="vrBCTd_uDz507Jjtsnyi-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="135" />
+              <mxPoint x="960" y="134" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-10" value="+ getPlayerName() : String&lt;br&gt;+ setPosition(position : int) : void&lt;br&gt;- setAttackBoard(board: Board) : void&lt;br&gt;+ setPersonnalBoard(board : Board) : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="520" y="170" width="240" height="80" as="geometry" />
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-13" value="Use" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WR7Sw_NgIf90zPRT2UT7-12">
+          <mxGeometry x="-0.0668" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.456;entryY=1.002;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#CCCCCC;entryPerimeter=0;" parent="1" source="vrBCTd_uDz507Jjtsnyi-11" target="vrBCTd_uDz507Jjtsnyi-10" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#000000;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-9" target="vrBCTd_uDz507Jjtsnyi-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="165" />
+              <mxPoint x="910" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-9" value="# playerName : String&lt;br&gt;# statNbTotalShot : int&lt;br&gt;# statNbSuccessfullShot : int&lt;br&gt;# statNbBoatShot : int&lt;br&gt;# board : Board&lt;br&gt;# lastCellShot : Cell&lt;br&gt;# in : BufferedReader" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="520" y="80" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-10" value="+ incrementStatNbTotalShot() : void&lt;br&gt;+ incrementStatNbSuccessfullShot() : void&lt;br&gt;+ incrementStatNbBoatShot()&amp;nbsp;: void&lt;br&gt;+ getBoard() : Board&lt;br&gt;+ getPlayerName() : String&lt;br&gt;+ printStats() : void&lt;br&gt;#&amp;nbsp;getLastCellShot() : Cell&lt;br&gt;# setLastCellShot(x : int, y : int) : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="520" y="190" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=1;strokeColor=#CCCCCC;" parent="1" source="vrBCTd_uDz507Jjtsnyi-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="631" y="310" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-46" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="vrBCTd_uDz507Jjtsnyi-13" vertex="1" connectable="0">
           <mxGeometry x="-0.5598" y="1" relative="1" as="geometry">
-            <mxPoint x="-17" y="2" as="offset" />
+            <mxPoint x="-17" y="11" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-11" value="&lt;b&gt;PlayerComputer&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="380" y="288" width="240" height="40" as="geometry" />
+          <mxGeometry x="380" y="349.97" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-16" value="- playerId : int&lt;br&gt;- level : String" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="380" y="328" width="240" height="50" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-16" value="- difficulty : int" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="380" y="389.97" width="240" height="27.08" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;strokeWidth=1;entryX=0.55;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vrBCTd_uDz507Jjtsnyi-18" target="vrBCTd_uDz507Jjtsnyi-10" edge="1">
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;strokeWidth=1;entryX=0.55;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vrBCTd_uDz507Jjtsnyi-18" target="vrBCTd_uDz507Jjtsnyi-10" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="652" y="254" as="targetPoint" />
+            <mxPoint x="652" y="315.08" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="780" y="270" />
-              <mxPoint x="652" y="270" />
+              <mxPoint x="790" y="330" />
+              <mxPoint x="652" y="330" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-47" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="vrBCTd_uDz507Jjtsnyi-25" vertex="1" connectable="0">
           <mxGeometry x="-0.6066" relative="1" as="geometry">
-            <mxPoint x="15" y="-1" as="offset" />
+            <mxPoint x="13" y="10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-18" value="&lt;b&gt;PlayerHuman&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="660" y="288" width="240" height="40" as="geometry" />
+          <mxGeometry x="660" y="349.96" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-19" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="660" y="328" width="240" height="22" as="geometry" />
+          <mxGeometry x="660" y="389.96" width="240" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-20" value="- askForName() : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="660" y="350" width="240" height="40" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-20" value="+ placeBoats() : void&lt;br&gt;+ shoot(enemy : Player) : void&lt;br&gt;# setPlayerName() : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="660" y="411.96" width="240" height="55.08" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-27" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="380" y="378" width="240" height="22" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-27" value="+ placeBoats() : void&lt;br&gt;+ shoot(enemy : Player) : void&lt;br&gt;# setPlayerName() : void&lt;br&gt;- setDifficulty() : void&lt;br&gt;- cellArrayAdd(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; array : Cell[],&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; cell : Cell&lt;br&gt;&amp;nbsp; &amp;nbsp;) : Cell[]&lt;br&gt;- updateNonPotentialCells(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; array : Cell[]&lt;br&gt;&amp;nbsp; &amp;nbsp;) : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="380" y="417.05" width="240" height="162.95" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-28" value="&lt;b&gt;&lt;i&gt;Board&lt;/i&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-28" value="&lt;b&gt;Board&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="40" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-29" value="# scanner : Scanner&lt;br&gt;# board : Cell[][]&lt;br&gt;# player : Player" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="960" y="80" width="240" height="60" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-29" value="- board : Cell[][]&lt;br&gt;- boats : Boat[]" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="960" y="80" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-30" value="# generateEmptyBoard() : Cell[][]&lt;br&gt;+ tirer(x : int, y : int) : String" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="960" y="140" width="240" height="40" as="geometry" />
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;dashed=1;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-30" target="vrBCTd_uDz507Jjtsnyi-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="210" />
+              <mxPoint x="1220" y="210" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-50" value="&lt;b&gt;ArrayHelpers&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="80" y="340" width="240" height="40" as="geometry" />
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-16" value="Use" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WR7Sw_NgIf90zPRT2UT7-15">
+          <mxGeometry x="-0.1679" y="-2" relative="1" as="geometry">
+            <mxPoint x="7" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-30" target="vrBCTd_uDz507Jjtsnyi-81">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="344" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;entryX=1;entryY=0.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-30" target="vrBCTd_uDz507Jjtsnyi-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="762" y="195" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-30" value="+ getCell(x : int, y : int) : Cell&lt;br&gt;+ showPersonnalBoard() : void&lt;br&gt;+ showPlayBoard(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; playerName : String, &lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; enemy : Player&lt;br&gt;&amp;nbsp; &amp;nbsp;) : void&lt;br&gt;+ addBoat(boat : Boat) : void&lt;br&gt;+ existsNeighbohrs(cells : Cell[]) : boolean&lt;br&gt;+ isInBoard(cells&amp;nbsp;: Cell[]) : boolean&lt;br&gt;+ existsOverlap(cells : Cell[]) : boolean&lt;br&gt;+ generateBoatCoordinates(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; x : int,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; y : int,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; direction : String,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; boatSize : int&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; boatId : int&lt;br&gt;&amp;nbsp; &amp;nbsp;) : Cell[]&lt;br&gt;+ getBoats() : Boat[]&lt;br&gt;+ getBoats(boatId : int) : Boat&lt;br&gt;+ getCells() : Cell[]&lt;br&gt;+ notPlayedCell(x : int, y : int) : boolean&lt;br&gt;- generateBlankBoard(w : int, h : int) : Cell[][]" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="960" y="120" width="240" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-50" value="&lt;b&gt;CoordinateHelper&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="289.97" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-51" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="80" y="380" width="240" height="20" as="geometry" />
+          <mxGeometry x="80" y="329.97" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-52" value="+ arrayCharContains(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; value : char,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; array : char[]) : boolean&lt;br&gt;+ arrayIntContains(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; value : int,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; array : int[]) : boolean&lt;br&gt;+ arrayStringContains(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; value : String,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; array : String[]) : boolean" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="80" y="400" width="240" height="130" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-52" value="+ letterCoordinateToNumber(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; coordinate : String,&lt;br&gt;&amp;nbsp; &amp;nbsp;) : String&lt;br&gt;+ numberCoordinateToLetter(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; coordinate : int,&lt;br&gt;&amp;nbsp; &amp;nbsp;) : String&lt;br&gt;+ isValid(x&amp;nbsp;: int, y&amp;nbsp;: int) : boolean" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="80" y="349.97" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-56" value="&lt;b&gt;ConsoleHelper&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="80" y="570" width="240" height="40" as="geometry" />
+          <mxGeometry x="80" y="487.05" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-57" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="80" y="610" width="240" height="20" as="geometry" />
+          <mxGeometry x="80" y="527.05" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-58" value="+ effaceEcran() : void&lt;br&gt;+ sleep(millies : long) : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="80" y="630" width="240" height="40" as="geometry" />
+          <mxGeometry x="80" y="547.05" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-71" value="&lt;b&gt;Cell&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1280" y="40" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-72" value="- x : int&lt;br&gt;- y : int&lt;br&gt;- value : int" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-72" value="- x : int&lt;br&gt;- y : int&lt;br&gt;- id : int&lt;br&gt;- shot : boolean" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1280" y="80" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-73" value="+ addBoat(value : int) : void&lt;br&gt;+ tirer() : String&lt;br&gt;+ getBoatId() : int&lt;br&gt;+ dejaTouchee() : boolean&lt;br&gt;+ dejaTiree() : boolean&lt;br&gt;+ getValue() : int&lt;br&gt;+ getX() : int&lt;br&gt;+ getY() : int" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1280" y="140" width="240" height="120" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-73" value="+ addBoat(id : int) : void&lt;br&gt;+ getX() : int&lt;br&gt;+ getY() : int&lt;br&gt;+ shoot() : void&lt;br&gt;+ public isShot() : boolean&lt;br&gt;+ getId() : int&lt;br&gt;+ setId() : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="140" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="vrBCTd_uDz507Jjtsnyi-80" value="&lt;b&gt;Boat&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1280" y="300" width="240" height="40" as="geometry" />
+          <mxGeometry x="1280" y="280" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-81" value="- id : int&lt;br&gt;- cells : Cell[]&lt;br&gt;- name : String&lt;br&gt;- size : int&lt;br&gt;- lifePoints : int" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1280" y="340" width="240" height="80" as="geometry" />
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;entryX=-0.002;entryY=0.896;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-81" target="vrBCTd_uDz507Jjtsnyi-73">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1240" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1260" y="330" />
+              <mxPoint x="1260" y="230" />
+              <mxPoint x="1280" y="230" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="vrBCTd_uDz507Jjtsnyi-82" value="+ estCoule() : boolean&lt;br&gt;+ getSize() : int&lt;br&gt;+ getName() : String&lt;br&gt;+ getId() : int&lt;br&gt;+ getCellValue(cellPosition : int) : int" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1280" y="420" width="240" height="80" as="geometry" />
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-81" value="- id : int&lt;br&gt;- cells : Cell[]&lt;br&gt;- direction : String" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="320" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vrBCTd_uDz507Jjtsnyi-82" value="+ isSunk() : boolean&lt;br&gt;+ getCells() : Cell[]&lt;br&gt;+ getId() : int&lt;br&gt;+ getDirection() : String" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="369.96" width="240" height="60.04" as="geometry" />
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-3" value="&lt;b&gt;Menu&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="480" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-4" value="- in : BufferedReader" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="960" y="520" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-5" value="+ selectOption() : int&lt;br&gt;+ showMenu() : void&lt;br&gt;+ showRules() : void&lt;br&gt;+ showAbout() : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="960" y="540" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#000000;" edge="1" parent="1" source="vrBCTd_uDz507Jjtsnyi-30" target="vrBCTd_uDz507Jjtsnyi-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-8" value="&lt;b&gt;TextHelper&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="630" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-9" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="670" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WR7Sw_NgIf90zPRT2UT7-10" value="+ generateSpaceBlanks(&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; spaceSize : int&lt;br&gt;&amp;nbsp; &amp;nbsp;) : void" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="690" width="240" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
