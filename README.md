@@ -1,6 +1,6 @@
 # Bataille navale
 
-![Battleship Gale](https://ibb.co/jT5CWQK "Battleship game")
+![Battleship Game](https://i.ibb.co/CztjMYd/22-Capture.png "Battleship game")
 
 ## Introduction
 
