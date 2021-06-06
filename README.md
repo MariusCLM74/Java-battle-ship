@@ -1,5 +1,7 @@
 # Bataille navale
 
+![Battleship Gale](https://ibb.co/jT5CWQK "Battleship game")
+
 ## Introduction
 
 Ce jeu a été développé dans le cadre du projet de fin d'année du cours *Algorithmique et programmation 1 & 2* dispensé en première année de *FIMI* à l'*[INSA Lyon](https://www.insa-lyon.fr/)*.
